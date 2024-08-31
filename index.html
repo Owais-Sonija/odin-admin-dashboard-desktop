@@ -1,13 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Admin Dashboard</h1>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="page" id="page">
+      <div class="sidebar">
+        <div class="side_top">
+          <span class="logo"><i class="fa-solid fa-box"></i></span>
+          <h1>Dashboard</h1>
+        </div>
+        <div class="side_mid">
+          <div class="first_menu_area">
+            <ul class="menu menu_one">
+              <li class="item">
+                <span class="menu_icon"><i class="fa-solid fa-house"></i></span>
+                <span class="menu_link">Home</span>
+              </li>
+              <li class="item">
+                <span class="menu_icon"
+                  ><i class="fa-regular fa-address-card"></i
+                ></span>
+                <span class="menu_link">Profile</span>
+              </li>
+              <li class="item">
+                <span class="menu_icon"
+                  ><i class="fa-regular fa-message"></i
+                ></span>
+                <span class="menu_link">Messages</span>
+              </li>
+              <li class="item">
+                <span class="menu_icon"><i class="fa-solid fa-clock"></i></span>
+                <span class="menu_link">History</span>
+              </li>
+              <li class="item">
+                <span class="menu_icon"><i class="fa-solid fa-copy"></i></span>
+                <span class="menu_link">Tasks</span>
+              </li>
+              <li class="item">
+                <span class="menu_icon"><i class="fa-solid fa-users"></i></span>
+                <span class="menu_link">Commnunities</span>
+              </li>
+            </ul>
+          </div>
+          <div class="second_menu_area">
+            <ul class="menu menu_two">
+              <li class="item">
+                <span class="menu_icon"><i class="fa-solid fa-gear"></i></span>
+                <span class="menu_link">Settings</span>
+              </li>
+              <li class="item">
+                <span class="menu_icon"
+                  ><i class="fa-regular fa-circle-question"></i
+                ></span>
+                <span class="menu_link">Support</span>
+              </li>
+              <li class="item">
+                <span class="menu_icon"
+                  ><i class="fa-solid fa-user-shield"></i
+                ></span>
+                <span class="menu_link">Privacy</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <header class="header">
+          <div class="header_nav">
+            <div class="nav_left">
+              <span class="search_icon"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+              <input type="search" name="search" id="search" />
+            </div>
+            <div class="nav_right">
+              <div class="notification">
+                <i class="fa-regular fa-bell"></i>
+              </div>
+              <div class="user_area">
+                <img src="./images/bodybuillder.jpg" alt="user_avatar" />
+                <span class="user">Dr Owais Developer</span>
+              </div>
+            </div>
+          </div>
+          <div class="header_body">
+            <div class="person_area">
+              <div class="user_image_area">
+                <img
+                  src="./images/bodybuillder.jpg"
+                  alt="user_avatar"
+                  width="80"
+                  height="80"
+                />
+              </div>
+              <div class="user_logged_info">
+                <p class="user_greeting">Hi, there</p>
+                <p class="user_details">Dr Owais Developer(@owais)</p>
+              </div>
+            </div>
+            <div class="btns_area">
+              <button class="func_btn">New</button>
+              <button class="func_btn">Upload</button>
+              <button class="func_btn">Share</button>
+            </div>
+          </div>
+        </header>
+        <main class="content">
+          <div class="portfolio">
+            <h2>Your Projects</h2>
+            <div class="projects">
+              <div class="project">
+                <div class="project_header">
+                  <h3 class="project_title">Super Cool Project</h3>
+                  <p class="project_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore fugit ea iste ab? Esse, repudiandae a consequatur
+                    nihil eos aspernatur porro aperiam voluptatem atque iste
+                    neque ex reiciendis quaerat quo!
+                  </p>
+                </div>
+                <div class="project_footer">
+                  <span class="project_icon"
+                    ><i class="fa-regular fa-star"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project_header">
+                  <h3 class="project_title">Super Cool Project</h3>
+                  <p class="project_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore fugit ea iste ab? Esse, repudiandae a consequatur
+                    nihil eos aspernatur porro aperiam voluptatem atque iste
+                    neque ex reiciendis quaerat quo!
+                  </p>
+                </div>
+                <div class="project_footer">
+                  <span class="project_icon"
+                    ><i class="fa-regular fa-star"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project_header">
+                  <h3 class="project_title">Super Cool Project</h3>
+                  <p class="project_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore fugit ea iste ab? Esse, repudiandae a consequatur
+                    nihil eos aspernatur porro aperiam voluptatem atque iste
+                    neque ex reiciendis quaerat quo!
+                  </p>
+                </div>
+                <div class="project_footer">
+                  <span class="project_icon"
+                    ><i class="fa-regular fa-star"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project_header">
+                  <h3 class="project_title">Super Cool Project</h3>
+                  <p class="project_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore fugit ea iste ab? Esse, repudiandae a consequatur
+                    nihil eos aspernatur porro aperiam voluptatem atque iste
+                    neque ex reiciendis quaerat quo!
+                  </p>
+                </div>
+                <div class="project_footer">
+                  <span class="project_icon"
+                    ><i class="fa-regular fa-star"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project_header">
+                  <h3 class="project_title">Super Cool Project</h3>
+                  <p class="project_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore fugit ea iste ab? Esse, repudiandae a consequatur
+                    nihil eos aspernatur porro aperiam voluptatem atque iste
+                    neque ex reiciendis quaerat quo!
+                  </p>
+                </div>
+                <div class="project_footer">
+                  <span class="project_icon"
+                    ><i class="fa-regular fa-star"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project_header">
+                  <h3 class="project_title">Super Cool Project</h3>
+                  <p class="project_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore fugit ea iste ab? Esse, repudiandae a consequatur
+                    nihil eos aspernatur porro aperiam voluptatem atque iste
+                    neque ex reiciendis quaerat quo!
+                  </p>
+                </div>
+                <div class="project_footer">
+                  <span class="project_icon"
+                    ><i class="fa-regular fa-star"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project_header">
+                  <h3 class="project_title">Super Cool Project</h3>
+                  <p class="project_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore fugit ea iste ab? Esse, repudiandae a consequatur
+                    nihil eos aspernatur porro aperiam voluptatem atque iste
+                    neque ex reiciendis quaerat quo!
+                  </p>
+                </div>
+                <div class="project_footer">
+                  <span class="project_icon"
+                    ><i class="fa-regular fa-star"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project_header">
+                  <h3 class="project_title">Super Cool Project</h3>
+                  <p class="project_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore fugit ea iste ab? Esse, repudiandae a consequatur
+                    nihil eos aspernatur porro aperiam voluptatem atque iste
+                    neque ex reiciendis quaerat quo!
+                  </p>
+                </div>
+                <div class="project_footer">
+                  <span class="project_icon"
+                    ><i class="fa-regular fa-star"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project_header">
+                  <h3 class="project_title">Super Cool Project</h3>
+                  <p class="project_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore fugit ea iste ab? Esse, repudiandae a consequatur
+                    nihil eos aspernatur porro aperiam voluptatem atque iste
+                    neque ex reiciendis quaerat quo!
+                  </p>
+                </div>
+                <div class="project_footer">
+                  <span class="project_icon"
+                    ><i class="fa-regular fa-star"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></span>
+                  <span class="project_icon"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_right_sidebar">
+            <div class="announcement_area">
+              <h2>Announcements</h2>
+
+              <div class="announcements">
+                <div class="announcement">
+                  <h4 class="announcement_title">Site Maintenance</h4>
+                  <p class="announcement_body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis, assumenda! Deleniti fugit nesciunt ipsam quos,
+                    incidunt dolor maiores ab est eum vero culpa officia
+                    dolorem, voluptates unde inventore ratione dolores?
+                  </p>
+                </div>
+                <div class="announcement">
+                  <h4 class="announcement_title">Site Maintenance</h4>
+                  <p class="announcement_body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis, assumenda! Deleniti fugit nesciunt ipsam quos,
+                    incidunt dolor maiores ab est eum vero culpa officia
+                    dolorem, voluptates unde inventore ratione dolores?
+                  </p>
+                </div>
+                <div class="announcement">
+                  <h4 class="announcement_title">Site Maintenance</h4>
+                  <p class="announcement_body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis, assumenda! Deleniti fugit nesciunt ipsam quos,
+                    incidunt dolor maiores ab est eum vero culpa officia
+                    dolorem, voluptates unde inventore ratione dolores?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="trendings_area">
+              <h2>Trending</h2>
+
+              <div class="trending_users">
+                <div class="trending_user">
+                  <div>
+                    <img src="./images/bodybuillder.jpg" alt="user_avatar" />
+                  </div>
+                  <div>
+                    <p class="user_handle">@doctor_developer</p>
+                    <p class="user_fullname">Dr Owais Developer</p>
+                  </div>
+                </div>
+                <div class="trending_user">
+                  <div>
+                    <img src="./images/bodybuillder.jpg" alt="user_avatar" />
+                  </div>
+                  <div>
+                    <p class="user_handle">@doctor_developer</p>
+                    <p class="user_fullname">Dr Owais Developer</p>
+                  </div>
+                </div>
+                <div class="trending_user">
+                  <div>
+                    <img src="./images/bodybuillder.jpg" alt="user_avatar" />
+                  </div>
+                  <div>
+                    <p class="user_handle">@doctor_developer</p>
+                    <p class="user_fullname">Dr Owais Developer</p>
+                  </div>
+                </div>
+                <div class="trending_user">
+                  <div>
+                    <img src="./images/bodybuillder.jpg" alt="user_avatar" />
+                  </div>
+                  <div>
+                    <p class="user_handle">@doctor_developer</p>
+                    <p class="user_fullname">Dr Owais Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
 </html>
